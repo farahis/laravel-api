@@ -7,14 +7,12 @@ Membuat Resource Api
 Controller : 
 ```php
 Route::get('/user/{user}', function (User $user) {
-return response()->json(
-[
-'status' => 'success',
-'status_code' => 200,
-'data' =>  $user
-],
-200
-);
+		return response()->json([
+			'status' => 'success',
+			'status_code' => 200,
+			'data' =>  $user
+		], 200
+	);
 });
 ```
 Output : 
